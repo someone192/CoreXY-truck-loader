@@ -43,7 +43,6 @@ void moveToXY(float targetX, float targetY) {
   targetX = constrain(targetX, 0, 550);
   targetY = constrain(targetY, 0, 500);
 
-  // Правильная CoreXY кинематика (ты был прав!)
   long targetA = round(( targetX + targetY) * STEPS_PER_MM);
   long targetB = round(( targetX - targetY) * STEPS_PER_MM);
 
